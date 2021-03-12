@@ -12,14 +12,12 @@ export default function Home({data}) {
 
       <h1>{data.Data.OfficialCaseName}</h1>
 
-      <div>
-        {data.Data.CasePhoneNumber}
-      </div>
+      <p>{data.Data.CaseWebsiteContent[1].Content}</p>
     </div>
   );
 }
 
-export async function getServerSideProps(){
+export async function getStaticProps(){
 
   const response = await fetch('https://apiwww.simpluris.com/api/case?caseUrl=qaclient.simpluris.com&lang=us');
 
