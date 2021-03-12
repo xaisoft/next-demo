@@ -19,7 +19,7 @@ export default function Home({data}) {
   );
 }
 
-export async function getStaticProps(){
+export async function getServerSideProps(){
 
   const response = await fetch('https://apiwww.simpluris.com/api/case?caseUrl=acmesettlement.com&lang=us');
 
