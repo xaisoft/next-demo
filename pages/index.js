@@ -11,6 +11,10 @@ export default function Home({data}) {
       </Head>
 
       <h1>{data.Data.OfficialCaseName}</h1>
+
+      <div>
+        {data.Data.CasePhoneNumber}
+      </div>
     </div>
   );
 }
