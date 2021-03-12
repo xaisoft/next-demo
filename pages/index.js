@@ -11,7 +11,7 @@ export default function Home({data}) {
       </Head>
 
       <h1>{data.Data.OfficialCaseName}</h1>
-
+      <p>{data.Data.CasePhoneNumber}</p>
       <p>{data.Data.CaseWebsiteContent[1].Content}</p>
     </div>
   );
