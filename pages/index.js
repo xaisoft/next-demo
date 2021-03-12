@@ -21,7 +21,7 @@ export default function Home({data}) {
 
 export async function getServerSideProps(){
 
-  const response = await fetch('https://apiwww.simpluris.com/api/case?caseUrl=acmesettlement.com&lang=us');
+  const response = await fetch('https://apiwww.simpluris.com/api/case?caseUrl=qaclient.simpluris.com&lang=us');
 
   const data = await response.json();
 
